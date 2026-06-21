@@ -141,4 +141,4 @@ You can log in to the client interface using the pre-seeded credentials (configu
 ## 📞 Support & Contacts
 If you encounter any issues during local deployment, verify that the Spring Boot Backend server is running successfully at `http://localhost:8080/api`. 
 
-For inquiries, please contact: `siddharth90750@example.com`
+For inquiries, please contact: `siddharth90750@gmail.com`
