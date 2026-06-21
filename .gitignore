@@ -1,0 +1,35 @@
+# IDE / System files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+
+# Backend (Spring Boot / Java / Maven)
+Backend/target/
+Backend/*.class
+Backend/*.jar
+Backend/*.war
+Backend/*.ear
+Backend/bin/
+Backend/.settings/
+Backend/.helper/
+Backend/.metadata/
+Backend/.classpath
+Backend/.project
+
+# Frontend (Next.js / Node)
+Frontend/myadmin/node_modules/
+Frontend/myadmin/.next/
+Frontend/myadmin/out/
+Frontend/myadmin/build/
+Frontend/myadmin/.env*
+Frontend/myadmin/npm-debug.log*
+Frontend/myadmin/yarn-debug.log*
+Frontend/myadmin/yarn-error.log*
+Frontend/myadmin/.pnpm-debug.log*
+Frontend/myadmin/next-env.d.ts
+Frontend/myadmin/*.tsbuildinfo

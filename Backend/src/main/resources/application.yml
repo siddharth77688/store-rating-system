@@ -1,0 +1,30 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/store_rating?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: Sac@placement47
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQL8Dialect
+
+jwt:
+  # Base64 encoded secret key (min 256 bits, at least 32 characters)
+  # Here is a 256-bit key: "this-is-a-very-secure-jwt-secret-key-for-store-rating-platform"
+  secret: this-is-a-very-secure-jwt-secret-key-for-store-rating-platform
+  expiration: 86400000 # 24 hours in milliseconds
+
+cors:
+  allowed-origins: http://localhost:3000,http://127.0.0.1:3000,http://192.168.1.6:3000
