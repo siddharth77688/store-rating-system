@@ -643,65 +643,9 @@ This project is submitted as part of a FullStack Intern Coding Challenge.
 
 ## Contact
 
-For questions or issues, please contact: [siddharth90750@example.com]
+For questions or issues, please contact: [siddharth90750@gmail.com]
 
-
-
-Antigravity done..
-I have successfully built the Store Rating Platform as specified in module.md.
-
-  Based on your inputs, the application has been built using MySQL 8.0 (with password  Sac@placement47 )
-  instead of PostgreSQL, and the frontend is located in the existing Next.js directory myadmin.
-  ### Summary of Built Components
-
-  #### 1. Backend: Spring Boot 3 + Java 21 + MySQL + Spring Security (under Backend)
-  • Entities: Created User.java, Store.java, and Rating.java using MySQL syntax with checking
-  constraints and auto-increment sequences.
-  • Repositories & Services: Created database access layer for users, stores, and ratings along with
-  services mapping entities to secure DTO models, implementing pagination, sorting, search matching, and
-  dynamic update triggers.
-  • Security Context (JWT): Created stateless session management using JJWT 0.12.x in SecurityConfig.java,
-  validation filter mapping roles, and custom route gates.
-  • Seeder: Configured DatabaseSeeder.java which inserts default admin, store owners, normal users, store
-  outlines, and ratings on first boot if tables are empty.
-
-  #### 2. Frontend: Next.js + React 19 + Tailwind CSS v4 + Lucide Icons (under myadmin)
-
-  • Auth Wrapper: Designed api.ts coordinating request header attachments, sessionStorage, and
-  unauthorized logging redirections.
-  • Style System: Set up responsive dark-slate layouts ( globals.css ) using Tailwind, scrollbar styles,
-  animations, and custom glassmorphism borders.
-  • Login & Signup: Created page.tsx and page.tsx supporting credential checking and
-  validation boundaries.
-  • Admin Console: Created page.tsx rendering status cards, dynamic directories with column header
-  sorting, and modal dialog forms for registering accounts/stores.
-  • Owner Dashboard: Created page.tsx showing business outline, distribution bar charts, feedback
-  logs, and password updates.
-  • User Space: Created page.tsx displaying a grid of stores with location badges, interactive
-  stars rating sliders, and search filtering.
-
-  ### Verification Results
-
-  1. Backend Compilation: Ran  mvn clean compile  inside  /Backend  directory and achieved BUILD SUCCESS.
-  2. Frontend Production Build: Ran  npm run build  inside  /Frontend/myadmin  and verified it compiles
-  Compiled successfully with all routes ( / ,  /admin ,  /login ,  /owner ,  /register ,  /user )
-  optimized.
-  ──────
-  ### How to Run Locally
-
-  #### 1. Start the Spring Boot Backend
-
-    cd Backend                                                                                           
-    mvn spring-boot:run                                                                                  
-
-  The database and seed values will be automatically initialized in MySQL on startup.
-
-  #### 2. Start the Next.js Frontend
-
-    cd Frontend/myadmin                                                                                  
-    npm run dev                                                                                          
-
-  #### 3. Log In with Default Seed Accounts:
+##  Log In with Default Seed Accounts:
 
   • System Admin: Email:  admin@storerating.com  | Password:  AdminPassword123! 
   • Store Owner: Email:  owner1@storerating.com  | Password:  OwnerPassword123! 
